@@ -1,5 +1,5 @@
 # Website-Development
-Here you can see some websites-clone
+Some websites-clone
 
 In this Repo have six different websites-clone which created using HTML, CSS & JS 
 
