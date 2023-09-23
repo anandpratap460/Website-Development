@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand's Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@427&display=swap" rel="stylesheet">
+    <style>
+        /* css reset */
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            font-weight: bold;
+            color: black;
+            margin: 0px;
+            padding: 0px;
+            background: url('https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        }
+
+        .left {
+            position: absolute;
+            left: 35px;
+            top: 15px;
+            /* border: 2px solid red; */
+            display: inline-block;
+
+        }
+
+        .left img {
+            width: 100px;
+            height: 90px
+        }
+
+        .left div {
+            line-height: 19px;
+            font-family: 'Baloo Bhai 2';
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+            color: rgb(130, 3, 3);
+
+
+        }
+
+        .mid {
+            display: block;
+            width: 48%;
+            margin: 18px auto;
+            text-align: center;
+            /* border: 2px solid rgb(0, 255, 13); */
+
+        }
+
+        .right {
+            position: absolute;
+            right: 12px;
+            top: 31px;
+            display: inline-block;
+            /* border: 2px solid rgb(225, 255, 0); */
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 28px;
+        }
+
+        .navbar li a {
+            color: rgb(243, 243, 243);
+            text-decoration: none;
+            padding: 30px;
+
+        }
+
+
+        .navbar li a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai 2';
+            font-weight: bold;
+            margin: 0px 9px;
+            background-color: white;
+            padding: 8px 6p;
+            color: black;
+            border: 2px solid gray;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .btn:hover {
+            background-color: rgb(204, 201, 193);
+        }
+
+        .container {
+            border: 2px solid rgb(83, 83, 83);
+            margin: 77px 34px;
+            padding: 31px 24px;
+            width: 33%;
+            border-radius: 14px;
+        }
+
+        .right-group input {
+            font-family: 'Baloo Bhai 2';
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            width: 400px;
+            margin: 10px auto;
+            padding: 1px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 2px solid black;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-family: 'Baloo Bhai 2';
+            font-weight: bold;
+            color: maroon;
+        }
+
+        .container button {
+            font-weight: bold;
+            display: block;
+            width: 405px;
+            margin: 38px auto;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/gymlogo.png" alt="">
+            <div>Anand Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join my GYM center Lucknow</h1>
+        <form action="no-action.php">
+            <div class="right-group">
+                <input type="text" name="1" placeholder="Enter your Name">
+            </div>
+            <div class="right-group">
+                <input type="text" name="2" placeholder="Enter your Age">
+            </div>
+            <div class="right-group">
+                <input type="text" name="3" placeholder="Enter your Gender">
+            </div>
+            <div class="right-group">
+                <input type="text" name="4" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    margin-right: -55px;
+
+}
+
+.logo img {
+    margin: 14px 24px;
+    width: 35%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    cursor: pointer;
+    position: sticky;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    /* background-color: rgb(0, 0, 0); */
+
+}
+
+.nav-list li {
+    padding: 26px 28px;
+    list-style: none;
+
+
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: gray;
+
+}
+
+.rightNav {
+    width: 50%;
+    /* background-color: blueviolet; */
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search {
+    background: #e6dfdf;
+    padding: 4px 6px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+
+.background {
+    background: rgb(55, 55, 58) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection {
+    height: 58vh;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 60%;
+    margin: auto;
+    height: 75%;
+}
+
+.firstHalf {
+    margin-top: 150px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf {
+    width: 30%;
+
+}
+
+.secondHalf img {
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.text-big {
+    font-size: 38px;
+}
+
+.text-small {
+    font-size: 16px;
+}
+
+.btn {
+    padding: 6px 18px;
+    margin: 8px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+.btn-sm {
+    padding: 6px 8px;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.section {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 85%;
+    margin: auto;
+
+}
+
+.sectionLeft {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: row-reverse;
+
+}
+
+.paras {
+    padding: 0px 45px;
+}
+
+.thumbnail img {
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+
+.sectionTag {
+    font-weight: 400;
+    padding: 12px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sectionSubTag {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact {
+    background-color: rgb(199, 238, 225);
+    height: 760px;
+}
+
+.text-center {
+    text-align: center;
+    padding-top: 36px;
+    font-size: 28px;
+}
+
+.form {
+    max-width: 1200px;
+    margin: 14px auto;
+}
+
+.form-input {
+    margin: 18px 0;
+    padding: 4px 12px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-dark {
+    color: black;
+    border: 2px solid gray;
+}
+
+.text-footer {
+    text-align: center;
+    padding-top: 4px;
+    font-family: serif;
+    display: flex;
+    justify-content: center;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 15px;
+
+
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+    align-items: center;
+}
+
+/* For make responsive in phone */
+/* Here used mediaQuery but not complete responsive */
+
+@media only screen and (max-width: 1060px) {
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .rightNav {
+        text-align: center;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav-resp {
+        height: 372px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+    }
+}
